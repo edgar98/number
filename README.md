@@ -59,3 +59,7 @@ Unix:
 
 - Скопировать `number.war` папку `apache-tomcat-10*/webapps`
 - Запустить сервер `Tomcat`
+
+Для запуска сервиса, следует убедиться, что на машине с контейнером сервлетов запущена
+СУБД PostgreSQL с базой данных `numbers`, пользователь для входа `app_db`, пароль `app_db`, порт стандартный `5432`.
+Если данные входа отличаются — отредактировать файл [application.properties](src/main/resources/application.properties)
